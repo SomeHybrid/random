@@ -4,7 +4,7 @@ def crypt(data: str, key: list[int]):
     encrypted = ""
 
     for index, i in enumerate(data):
-        encrypted += chr((ord(i) ^ key[index]) % 1114111)
+        encrypted += chr(ord(i) ^ key[index])
 
     return encrypted
 
